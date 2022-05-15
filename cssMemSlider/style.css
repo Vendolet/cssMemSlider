@@ -42,3 +42,34 @@ body{
     opacity: 0;
     transition: opacity ease-in-out 0.5s;
 }
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+    opacity: 1;
+}
+
+.subcontent{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subcontent-description{
+    position: relative;
+    width: 50%;
+}
+
+.description{
+    color: rgba(230, 224, 224, 0);
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: rgb(20, 19, 19);
+    transition: color ease-in-out 0.8s;
+    margin: 5px 0 0 0;
+}
