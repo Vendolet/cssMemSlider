@@ -1,0 +1,44 @@
+.slide1{  background-image: url('assets/simpsons-homer.jpg');}
+.slide2{  background-image: url('assets/simpsons-marge.jpg');}
+.slide3{  background-image: url('assets/simpsons-bart.jpg');}
+.slide4{  background-image: url('assets/simpsons-liza.jpg');}
+.slide5{  background-image: url('assets/simpson-maggi.jpg');}
+
+.input-radio{
+    display: none;
+}
+    
+body{
+    background-color: rgb(20, 19, 19);
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+    align-content: center;
+    height: 100vh;
+}
+
+.slider{
+    position: relative;
+    width: inherit;
+    border-radius: 40px;
+    background-clip: content-box;
+    background-origin: border-box;
+    background-size: contain;
+    height: 50vw;
+}
+
+.slide{
+    height: inherit;
+    width: inherit;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity ease-in-out 0.5s;
+}
